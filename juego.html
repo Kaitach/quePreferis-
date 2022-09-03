@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Que Preferis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+
+</head>
+<body class="body" id="body">
+  <script>
+    var sonido = new Audio();
+  sonido.src="sonido.mp3"; 
+  </script>    
+   <div class="youtube-audio" data-video="bLGu3eO9_w0" data-autoplay="0" data-loop="1" id="youtube-audio">Sonido ambiente </div>
+   <script src="https://www.youtube.com/iframe_api"></script>
+   <button  class="reglas" onclick="reglas()">Reglas</button>
+
+    <h1  class="h1"">ELEGÍ ESTOY SEGURO QUE PERDERÁS  </h1>
+  
+
+    <div class="h1" id="section-cta">
+        <div class="container">
+          <a id="boton" onmousedown="sonido.play()" class="button"  onclick="pregunta()"  > &nbsp ¿Que Preferis? &nbsp </a>
+        </div>
+      </div>
+
+    <HR></HR>
+    <h1  class="h1" id="respuesta1"></h1>
+    <br>
+    <br>
+    <h1  class="h1" id="respuesta2"></h1>
+
+
+    <div class="alert alert-dar alert-dismissible fade"  class="alert alert-dark" role="alert"  id="alert-success">
+      <h1   style="color:#FF0000" class="h1"  class="text-align center">   SHOT SHOT SHOT</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" id="liveAlertBtn" aria-label="Close"></button>
+    </div>
+    <div class="alert alert-dar alert-dismissible fade"  class="alert alert-dark" role="alert"  id="reglas">
+      <h2 style="color:#FF0000" class="h1"  class="text-align center" > Regla 1: Tenes que elegir una opción</h2>   
+      <h2 style="color:#FF0000" class="h1"  class="text-align center" > Regla 2: Morir no es una opción</h2>   
+      <h2 style="color:#FF0000" class="h1"  class="text-align center" > Regla 3: En caso de no elegir una opción "SHOT"</h2> 
+      <button type="button" class="btn-close" data-bs-dismiss="alert" id="liveAlertBtn" aria-label="Close"></button>
+    </div>
+    <script src="script.js"></script>
+</html>
